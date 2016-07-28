@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <rules>
+        <fullName>abcc</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.BillingCity</field>
+            <operation>equals</operation>
+            <value>sfddfs</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>testOnly</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.BillingCity</field>
+            <operation>equals</operation>
+            <value>India</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>testOnly1</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.BillingStreet</field>
+            <operation>equals</operation>
+            <value>aaaa</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

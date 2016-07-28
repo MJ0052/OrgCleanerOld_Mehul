@@ -1,0 +1,22 @@
+<apex:page controller="CommentClass" showHeader="false" sidebar="false" >
+    <apex:form >
+    	<apex:pageblock >
+   			<apex:pageBlockSection title="All Classes" columns="1">
+   				 <apex:pageBlockSectionItem >
+                          <apex:outputlabel value="Class Names :"/> 
+                              <apex:actionRegion >
+                                   <apex:selectList value="{!selectedClass}" size="1">
+                                       <apex:selectOptions value="{!ApexClassBody}">
+                                       
+                                       </apex:selectOptions>
+                                    </apex:selectList>
+                              </apex:actionRegion>                         
+                      </apex:pageBlockSectionItem>
+   			</apex:pageBlockSection>
+            
+   			<apex:pageBlockButtons >
+                	<apex:commandButton action="{!tes}" value="Retrive Class" rerender=""/>
+        	</apex:pageBlockButtons>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>
